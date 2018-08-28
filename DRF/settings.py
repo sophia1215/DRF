@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # For Django-REST-framework
+    'rest_framework',
+
+    # My APPs
+    'musics',
 ]
 
 MIDDLEWARE = [
