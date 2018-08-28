@@ -25,5 +25,8 @@ router.register(r'music', views.MusicViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+
+    # For Authentications
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
